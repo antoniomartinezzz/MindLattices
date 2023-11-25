@@ -8,7 +8,11 @@ We evaluate and compare the utility of the baseline parcellation strategies (CC2
 ## BrainGNN
 See the BrainGNN.yaml for environment configuration.
 
-``` conda env create --name yourEnv -f BrainGNN.yaml```
+Run these lines to create and activate an appropriate 
+environment:
+
+```conda env create --name yourEnv -f BrainGNN.yaml```
+```conda env create --name yourEnv -f BrainGNN.yaml```
 
 
 
