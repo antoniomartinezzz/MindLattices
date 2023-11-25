@@ -92,7 +92,7 @@ Run
 
 ``` pip install tqdm```
 
-```
+
 
 
 To test, train-test and demo on BNT, follow the same instructions than for BrainGNN, changing the file to main_BNT.py
