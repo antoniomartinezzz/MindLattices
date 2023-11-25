@@ -78,10 +78,34 @@ Run
 
 ### Installation
 
+```conda create --name BNT python=3.9```
+
+```conda activate BNT```
+
+```pip install torch==1.12.1+cu113 torchvision==0.13.1+cu113 torchaudio==0.12.1 --extra-index-url https://download.pytorch.org/whl/cu113```
+
+```conda install -c conda-forge scikit-learn```
+
+```conda install -c conda-forge pandas```
+
+```pip install omegaconf```
+
+``` pip install tqdm```
+
+```
+
+
+To test, train-test and demo on BNT, follow the same instructions than for BrainGNN, changing the file to main_BNT.py
 ### Test
+
+```python main_BNT.py --mode test```
 
 ### Train-test
 
+```python main_BNT.py --mode train```
+
 ### Demo
+
+```python main_BNT.py --mode demo```
 
 
