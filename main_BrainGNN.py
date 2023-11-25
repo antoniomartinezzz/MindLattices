@@ -210,7 +210,8 @@ elif opt.mode == 'test':
 
 elif opt.mode == 'demo':
     best_model_path = '/media/SSD2/MindGraphs/ABIDE_data/BrainGNN_models/OURS_REP_0/FOLD0.pth'
-    subject = [random.randint(0, 871)]
+    _, te_index, _ = train_val_test_split(fold = 0, center_list=center_list)
+    subject = [te_index[random.randint(0, len(te_index))]]
     subject_dataset = dataset[list(subject)]
     subject_loader = DataLoader(subject_dataset, batch_size=1, shuffle=True) #create loader with batchsize = 1 and shuffle True to select a single  random subject
     model = Network(indim,opt.ratio,nclass,nroi).to(device)
