@@ -11,8 +11,19 @@ See the BrainGNN.yaml for environment configuration.
 Run these lines to create and activate an appropriate 
 environment:
 
-```conda env create --name yourEnv -f BrainGNN.yaml```
-```conda env create --name yourEnv -f BrainGNN.yaml```
+```conda create --name yourEnv python=3.8```
+```conda activate yourEnv```
+```pip install nilearn```
+```pip install deepdish```
+```pip install tensorboardX==2.2```
+```pip install protobuf==3.17.0```
+```pip install torch-geometric==1.7.0```
+```conda install pytorch==1.7.0 torchvision==0.8.0 torchaudio==0.7.0 cudatoolkit=11.0 -c pytorch```
+```pip3 install torch-sparse==0.6.9 --no-cache-dir -f https://data.pyg.org/whl/torch-1.7.0+cu110.html```
+```pip3 install torch-scatter==2.0.6 --no-cache-dir -f https://data.pyg.org/whl/torch-1.7.0+cu110.html```
+```pip install networkx==2.5```
+```pip install numpy==1.23.4```
+
 
 
 
