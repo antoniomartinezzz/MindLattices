@@ -39,13 +39,39 @@ environment:
 
 ### Test
 
-To test the pretrained BrainGNN model using the 5-fold cross-validation with five repetitions. 
+To test the pretrained BrainGNN model using the 5-fold cross-validation with five repetitions using the proposed parcellation method, run:
+
+```python main_BrainGNN.py --mode test```
+
+This will test the models and print the mean ACC, AUC-ROC and AUC.
+
+To test using the baseline parcellations, use the --parcellation argument with either CC200 or HO. For example, for CC200:
+
+```python main_BrainGNN.py --mode test --parcellation CC200```
 
 
 ### Train-test
 
+To train a new set of models to replicate our results, run: 
+
+```python main_BrainGNN.py --mode train```
+
+This will train and test five repetition of a 5-fold cross-validation. Keep in mind that the results vary accross runs, so metrics will slightly vary to those reported in the paper. 
+
+Similarly to the test, you can choose the parcellation.
+
+```python main_BrainGNN.py --mode train --parcellation CC200```
+
+Finally, you can choose how many repetitions to train and test, using the --repetitions arguments. For example, to train using only one repetition instead of five, run:
+
+```python main_BrainGNN.py --mode train --parcellation OURS --repetitions 1```
+
+
 ### Demo
 
+Run 
+
+```python main_BrainGNN.py --mode demo```  to choose a random subject and predict wether they are autistic or not. 
 
 
 ## BNT
@@ -54,8 +80,8 @@ To test the pretrained BrainGNN model using the 5-fold cross-validation with fiv
 
 ### Test
 
-To test the pretrained BrainGNN model 
-
 ### Train-test
 
 ### Demo
+
+
