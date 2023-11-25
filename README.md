@@ -6,6 +6,11 @@ Current brain graph construction methods for functional connectivity studies inv
 We evaluate and compare the utility of the baseline parcellation strategies (CC200 and HO) with our parcellation strategy using BrainGNN and BNT on the ABIDE I dataset, using a 5-fold cross-validation with five repetitions. 
 
 ## BrainGNN
+See the BrainGNN.yaml for environment configuration.
+
+``` conda env create --name yourEnv -f BrainGNN.yaml```
+
+
 
 ### Installation
 
