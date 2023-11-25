@@ -7,6 +7,8 @@ We evaluate and compare the utility of the baseline parcellation strategies (CC2
 
 ## BrainGNN
 See the BrainGNN.yaml for environment configuration.
+### Installation
+Clone the repository 
 
 Run these lines to create and activate an appropriate 
 environment:
@@ -35,14 +37,10 @@ environment:
 
 ```pip install numpy==1.23.4```
 
-
-
-
-### Installation
-
 ### Test
 
-To test the pretrained BrainGNN model 
+To test the pretrained BrainGNN model using the 5-fold cross-validation with five repetitions. 
+
 
 ### Train-test
 
