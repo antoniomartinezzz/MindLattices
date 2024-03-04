@@ -5,7 +5,7 @@ Current brain graph construction methods for functional connectivity studies inv
 
 We evaluate and compare the utility of the baseline parcellation strategies (CC200 and HO) with our parcellation strategy using BrainGNN and BNT on the ABIDE I dataset, using a 5-fold cross-validation with five repetitions. 
 
-Paper here: 
+Read the paper here: 
 
 [Mind Lattice](https://drive.google.com/file/d/1u26-ChyaAUGcROl6FVDVZP2odEyhwa_v/view?usp=sharing)
 
